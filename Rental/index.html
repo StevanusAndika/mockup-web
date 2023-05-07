@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<div class="logo">
+		<h3>Steven's Drive-Away</h3>
+	</div>
+	<button class="menu-toggle">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</button>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About us</a></li>
+			<li><a href="#cars">view cars</a></li>
+			<li><a href="#contact">Contact form rental</a></li>
+			
+		</ul>
+	</nav>
+</header>
+
+<main>
+		<section class="hero" id="about">
+			<div class="hero-content">
+				<h1>Rent a Car with Steven's Drive-Away
+				</h1>
+				<p>The world's first expensive car rental, enjoy the sensation of riding a luxurious car.</p>
+				<a href="#" class="btn">View Cars</a>
+			</div>
+			<div class="hero-image">
+				<img src="https://source.unsplash.com/random/800x600" alt="Random car image">
+			</div>
+		</section>
+		<section class="car-list" id="cars">
+			<div class="car-card">
+				<div class="car-image">
+					<img src="https://source.unsplash.com/random/400x400" alt="Random car image">
+				</div>
+				<div class="car-info">
+					<h3>Chevrolet Spark</h3>
+					<p>The Chevrolet Spark is a city car produced by GM Korea, originally marketed prominently as the Daewoo Matiz.</p>
+					<p>6.814$	per hours</p>
+					<a href="#" class="btn">Book Now</a>
+				</div>
+			</div>
+			<div class="car-card">
+				<div class="car-image">
+<img src="https://source.unsplash.com/0JWc9OQIMJg/400x401" alt="Ford Mustang">
+
+				</div>
+				<div class="car-info">
+					<h3>Ford Mustang</h3>
+					<p>The Ford Mustang is a series of American automobiles manufactured by Ford.</p>
+					<p>7.000$ per hours</p>
+					<a href="#" class="btn">Book Now</a>
+				</div>
+			</div>
+			<div class="car-card">
+				<div class="car-image">
+					<img src="https://source.unsplash.com/random/401x400" alt="Random car image">
+				</div>
+				<div class="car-info">
+					<h3>Toyota Corolla</h3>
+					<p>The Toyota Corolla is a line of subcompact and compact cars manufactured by Toyota.</p>
+					<p>3.407$ per hours</p>
+					<a href="#" class="btn">Book Now</a>
+				</div>
+			</div>
+			</section>
+			</main>
+			<section id="contact">
+			  
+<form action="YOUR_ACTION_URL" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="car">The car brand you choose:</label>
+  <input type="text" id="car" name="car"><br>
+
+  <button type="submit">Book Now</button>
+</form>
+</section>
+	<footer>
+		<p>&copy; 2023 Steven's Drive-Away
+		All Rights Reserved.</p>
+	</footer>
+	<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', function() {
+	nav.classList.toggle('active');
+});
+
+	</script>
+</body>
+</html>
